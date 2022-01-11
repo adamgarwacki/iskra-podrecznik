@@ -1,0 +1,404 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage{multicol}
+\setlength{\columnsep}{10mm}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0mm}{12mm}{2mm}
+
+\usepackage{array}
+
+\author{Adam Garwacki}
+\title{Iskra - podrecznik}
+
+\begin{document}
+
+
+\chapter{Podstawowe zasady}
+
+\section{Przygotowanie do gry}
+\begin{multicols}{2}
+
+Każda osoba obecna przy stole powinna mieć dostęp co najmniej do:
+\begin{itemize}
+	\item ołówka i papieru (lub innego sposobu zapisu pozwalającego na pisanie i edycję);
+	\item zestawu następujących kości (fizycznych lub wirtualnych):  czterościenna (k4), sześciościenna (k6), ośmiościenna (k8), dziesięciościenna (k10), dwunastościenna (k12).
+\end{itemize}
+
+Pierwszą sesję gry zaleca się poprzedzić tak zwaną “sesją zero”, na której zamiast gry ustalone zostaną oczekiwania wszystkich uczestników (Graczy i Mistrza Gry), ich limity, tematy tabu, podstawowy (lub dokładny) zarys postaci, w tym głównie ich przeszłości i połączeń ze sobą. To pozwoli jasno ustalić oczekiwania każdego wobec gry i uniknąć niektórych nieporozumień.
+
+\end{multicols}
+
+
+\section{Podstawowa mechanika}
+\begin{multicols}{2}
+
+\subsection*{Przebieg rozgrywki}
+Gra przebiega zwykle według schematu: wszystkie wydarzenia i ich okoliczności są opisywane przez Mistrza Gry, na które Gracze reagują wcielając się we wcześniej stworzone postaci. Każdy Gracz posiada jedną postać, w którą wciela się podczas gry. Mistrz gry pełni rolę narratora, ma kontrolę nad każdą postacią która nie jest kontrolowana przez Gracza, a także nad takimi elementami jak wygląd, zapach i inne aspekty opisywanego świata.
+
+
+\subsection*{Testy}
+W przypadku kiedy postać kontrolowana przez Gracza lub Mistrza Gry wykonuje czynność której skutek nie jest do końca znany (zwykle wtedy, kiedy podejmowane jest ryzyko), należy wykonać test. Testem nazywa się zsumowanie wartości używanego atrybutu oraz odnoszących się do danej sytuacji modyfikatorów (specjalne zdolności, utrudnienia itd.), a następnie rzut kością k10 i dodanie jej wyniku. Test kończy się sukcesem jeśli wynik sumy wartości na kości i wszystkich modyfikatorów testu wynosi 10 lub więcej.
+
+
+\subsection*{Krytyczny sukces, krytyczna porażka}
+Krytyczny sukces uzyskuje się wtedy, kiedy suma wartości atrybutu oraz modyfikatorów wynosi +9 lub więcej. Mistrz gry może w takiej sytuacji zdecydować się na danie graczowi drobnego bonusu do jego akcji, np: dodatkowa Rana podczas udanego testu ataku.
+
+Krytyczna porażka z kolei dzieje się wtedy, kiedy suma wartości atrybutu oraz wszystkich modyfikatorów jest ujemna. Poza nieudanym testem Mistrz Gry może zdecydować się dodać negatywne skutki, np: wystawienie się na nadchodzące obrażenia podczas niezdanego testu na atak.
+
+\end{multicols}
+
+
+\section{Postać}
+\begin{multicols}{2}
+
+\subsection*{Pomysł na postać}
+Tworzenie postaci warto rozpocząć od wymyślenia dla niej imienia, ogólnego charakteru oraz historii, warto także pomyśleć o ewentualnych połączeniach z postaciami innych Graczy. Wszystko to nie jest ograniczone przez mechanikę gry, jedynie przez realia świata przedstawione przez Mistrz Gry - wszystkie szczegóły należy ustalić z nim.
+
+
+\subsection*{Gatunek}
+Każda postać jest jednym z gatunków występujących w świecie stworzonym przez Mistrza Gry. Każda z nich ma inne siły i słabości, bonusy i specjalne właściwości opisujące niektóre aspekty ich życia.
+
+
+\subsection*{Atrybuty}
+Większość Postaci w grze charakteryzowana jest przez \textbf{cztery główne Atrybuty} określające jej predyspozycje w różnych sytuacjach lub dziedzinach:
+\begin{itemize}
+	\item Siłę (oznaczaną jako Si): zdolność do podnoszenia ciężarów, rzucaniu na odległość, wspinania się, atakowania w ręcz, a także wytrzymałość fizyczna.
+	\item Zręczność (Zr): umiejętność balansowania, unikania, ukrywanie działań, rzucaniu do celu, atakowaniu z zasięgu.
+	\item Inteligencję (Int): znajomość informacji, wyczuwanie kłamstw, odgadywanie przeznaczenia nieznanych mechanizmów.
+	\item Charyzmę (Cha): pewność siebie, publiczne występowanie, przekonywanie, ukrywanie prawdy, wytrzymałość psychiczna.
+\end{itemize}
+
+Każdy z czterech atrybutów może przyjmować \textbf{wartości od 0 do 5}. Interpretowanie wartości atrybutów:
+\begin{itemize}
+	\item 0: niewystarczająco; słynny przez swoją niemoc.
+	\item 1: w ostateczności; lepiej żeby ktoś inny się tym zajął.
+	\item 2: przeciętnie; jest w stanie poradzić sobie z mniejszymi przeszkodami.
+	\item 3: dobrze; Postać może korzystać ze swojej umiejętności jako źródło stabilnego przychodu.
+	\item 4: wybitnie; inni znają Postać ze względu na jej umiejętność.
+	\item 5: legendarnie; mistrz w swojej kategorii.
+\end{itemize}
+
+
+\subsection*{Zdrowie}
+Zdrowie postaci oznacza ilość \textbf{Ran}, jakie może otrzymać postać zanim spotka ją śmierć. Maksymalna wartość Zdrowia zawsze wynosi 5. Kiedy ilość punktów Zdrowia wynosi 2 lub mniej, postać otrzymuje modyfikator -2 do wszystkich testów.
+
+Kiedy Zdrowie postaci osiągnie poziom 0, mówi się, że postać znajduje się na \textbf{Progu Śmierci}. Jeśli postać będąca na Progu Śmierci otrzyma jakiekolwiek obrażenia lub otrzyma porażkę w dowolnym wykonywanym przez siebie teście, natychmiast umiera. Postać przestaje być na Progu Śmierci jeśli odzyska co najmniej 1 punkt Zdrowia.
+
+Zdrowie postaci regeneruje się w tempie 1 punktu po upłynięciu jednej doby spędzonej na odpoczynku (bez przerwy) w \textbf{Bezpiecznym Miejscu}. Jeśli znajduje się poza takim, odzyskuje Zdrowie tylko jeśli zda test Si, który może wykonać wyłącznie \textbf{raz w ciągu jednej doby}. Normalnie należy wykonać ten test po raz pierwszy po upłynięciu jednej doby po otrzymaniu obrażeń. Wyjątkiem jest sytuacja, kiedy postać w trakcie odzyskiwania Zdrowia stanie na Progu Śmierci i nie odzyska zdrowia w żaden inny sposób: wtedy należy wykonać ten test dobę po stanięciu na Progu Śmierci.
+
+
+\subsection*{Punkty skupienia}
+Doświadczenie i szczęście postaci mierzy się za pomocą \textbf{Punktów Skupienia (PS)}. Początkowo każda z postaci może posiadać maksymalnie 5 PS na raz. PS można wykorzystać, aby:
+\begin{itemize}
+	\item wykonać swój test ponownie; można to zrobić tylko raz na test, drugi wynik jest wiążący.
+	\item odjąć lub dodać 1 do swojego testu za każdy wydany 1 PS.
+	\item odjąć 1 Ranę z nadchodzących obrażeń za każdy 1 wydany PS; można w ten sposób zmniejszyć nadchodzące obrażenia do zera.
+\end{itemize}
+	
+Aby użyć PS należy najpierw opisać, w jaki sposób w grze. Przykład: jeśli Postać spada w przepaść, Gracz może powiedzieć, że chce użyć 2 PS aby uniknąć dwóch Ran od upadku, dzięki czemu go przeżyje, ale musi opisać, jak jego Postać zdołała się złapać wystającego ze ściany korzenia i złagodziła w ten sposób upadek (szybka reakcja wynikająca z doświadczenia Postaci), albo jak na dnie przepaści rosło drzewo, którego liście stanowiły dobrą amortyzację (szczęśliwy przypadek).
+
+Jeśli Mistrz Gry uzna, że opis sytuacji podany przez Gracza nie jest odpowiedni lub przeczy logice świata, może nie zezwolić na taki bieg akcji, lecz powinien dać Graczowi możliwość zaproponowania czegoś innego.
+
+
+\subsection*{Predyspozycje i słabości}
+Na początku każda postać otrzymuje co najmniej jedną Predyspozycję oraz co najmniej jedną Słabość - to są modyfikatory do testów dotyczących odpowiednich sytuacji. Predyspozycją lub Słabością może być na przykład: Nawigacja, Pojedynki, Publiczne Przemówienia. Jeśli wykonywany test dotyczy tematu wskazanego przez Predyspozycję lub Słabość, należy dodać do testu odpowiednio +2 lub -2.
+
+Predyspozycje i Słabości nie są twardo zdefiniowane - każdy Gracz wymyśla je samemu i zapisuje dopiero po konsultacji z Mistrzem Gry. Można wybrać więcej niż jedną Predyspozycję, aby maksymalnie posiadać 3, ale za każdą dodatkową Predyspozycję należy wziąć jedną dodatkową Słabość.
+
+Przykład: trzeba pamiętać, że jeśli ktoś ma Predyspozycję Skradanie się i podczas skradania się zamierza wykonać atak, nie otrzymuje bonusu do tego ataku posiadając wyłącznie Skradanie się.
+
+Wskazówka: Predyspozycje i Słabości mogą być sposobem na zdefiniowanie części charakteru postaci: wskazują w jakich okolicznościach postać jest pewna siebie, a w jakich czuje niepewność.
+
+
+\subsection*{Doświadczenie}
+Punkty Doświadczenia (PD) są sposobem na poszerzanie umiejętności postaci. PD można zdobyć na trzy sposoby:
+\begin{itemize}
+	\item pokonanie trudnej przeciwności (walka, interakcja z postaciami kontrolowanymi przez Mistrza Gry, nieprzyjazne środowisko); każda postać biorąca udział w sytuacji otrzymuje 3 PD;
+	\item otrzymanie obrażeń: za każdą otrzymaną Ranę postać otrzymuje 1 PD;
+	\item odgrywanie postaci: na koniec sesji Mistrz Gry może przyznać jednemu lub wielu Graczom 1 PD według własnego uznania.
+\end{itemize}
+
+Zdobyte PD można wydawać między sesjami na następujące rzeczy:
+\begin{itemize}
+	\item nabycie nowej Zdolności: 10 PD;
+	\item zwiększenie maksymalnej liczby PS: 15 PD;
+	\item zwiększenie wartości jednego z Atrybutów: 20 PD.
+\end{itemize}
+
+
+\subsection*{Chwała}
+Punkty Chwały przyznawane są postacią które dokonały czynów uznawanych za niewiarygodnie trudne, które normalnie wykraczałyby poza zakres możliwości przeciętnej osoby - może to być pokonanie potężnego przeciwnika, wystąpienie w obronie wielu ludzi, dokonanie odkrycia zmieniającego postrzeganie świata.
+
+Chwała służy również jako wskazówka dla Mistrza Gry, jak duży wpływ powinny mieć czyny postaci na wydarzenia w świecie gry. Przykład interpretowania:
+\begin{itemize}
+	\item 0 punktów: niemal każdy przeciętny mieszkaniec znajduje się an tym poziomie.
+	\item 1 punkt: przez kilka miesięcy postać będzie czasem rozpoznawana na ulicy większego miasta.
+	\item 2 punkty: chwała godna pomnika; ktoś u władzy może być osobiście zainteresowany usługami takiej osoby.
+	\item 3 punkty: narodowy bohater; niemal każda napotkana osoba przynajmniej słyszała o postaci.
+	\item 4 punkty i więcej: imię postaci przeszło do legendy.
+\end{itemize}
+
+Można używać swojej chwały podczas interakcji ze spotykanymi mieszkańcami świata gry. Chcąc wywrzeć wpływ, zastraszyć kogoś lub do czegoś przekonać można potraktować swoją Chwałę jako dodatni modyfikator testu.
+
+Dodatkowo, istnieją specjalne Zdolności które mogą wymagać odpowiedniego poziomu Chwały, aby móc je zdobyć.
+
+
+\subsection*{Zdolności}
+Zdolności pozwalają postaci na wykonywanie specjalnych akcji, otrzymywanie dodatkowych modyfikatorów, bonusy do obrony itp.
+
+Podczas tworzenia Postaci oprócz Zdolności otrzymywanych przez wybrany Gatunek Gracz wybiera dwie Zdolności z listy.
+
+
+\subsection*{Udźwig}
+Udźwig określa jak wiele jak dużych przedmiotów może nosić tak, aby móc poruszać się swobodnie. Udźwig postaci wynosi \textbf{5 + 2 * Si}. Jeśli Postać posiada Predyspozycję lub Słabość dotyczącą dźwigania, można zmodyfikować jej Udźwig o odpowiednio +2 lub -2.
+
+Maksymalnie Postać jest w stanie podnieść \textbf{łączną Wagę} przedmiotów wynoszącą \textbf{maksymalnie dwukrotnie swój Udźwig}, lecz otrzymuje wtedy modyfikator -2 do testów wykorzystujących Si oraz Zr i może poruszać się maksymalnie z połową swojej normalnej prędkości.
+
+
+\end{multicols}
+
+
+\section{Akcje i walka}
+\begin{multicols}{2}
+
+Akcjami nazywa się czynności, jakie podejmuje postać. Akcje można podzielić na cztery główne grupy:
+\begin{itemize}
+	\item Duże Akcje: Akcje przeważnie wymagające wykonania rzutu lub wykorzystania PS.
+	\item Małe Akcje: Akcje przeważnie nie wymagające rzutu, takie jak dobycie broni, szybkie użycie przedmiotu. Można wykonać dodatkową Małą Akcję zamiast Dużej Akcji.
+	\item Przelotne Akcje: Akcje które można by wykonywać równocześnie z innymi, tak jak na przykład bieg, mowa.
+	\item Reakcje: Akcje podejmowane natychmiast kiedy zostaną spełnione odpowiednie warunki, np. zrobienie uniku.
+\end{itemize}
+
+To, jakim typem Akcji jest czynność wykonana przez Postać zwykle nie będzie miało dużego znaczenia. Staje się to jednak bardzo istotne w trakcie walki.
+
+
+\subsection*{Walka}
+\textbf{Walkę} rozpoczyna się wtedy, kiedy Gracze spotkają się ze znaczną przeciwnością, która zostanie przez Mistrza Gry uznana za wymagająca przejścia na inny tryb wykonywania Akcji. W Walce przeciwnością mogą być postaci kontrolowane przez Mistrza Gry, a także niebezpieczne zjawiska w świecie gry lub nawet inni Gracze.
+
+\textbf{Turą} nazywa się krótki czas w trakcie Walki, w którym jeden z jej uczestników mógł wykonywać Akcje. Kiedy wszyscy uczestnicy Walki zakończą swoje Tury kończy się jedna \textbf{Runda} i rozpoczyna kolejna.
+
+W trakcie jednej Rundy każdy z uczestników może wykonać \textbf{jedną z każdego typu Akcji}: Duże, Małe i Przelotne Akcje (lub dwie Małe Akcje oraz jedną Przelotną) w swojej Turze a Reakcje w dowolnym momencie Rundy kiedy zostaną spełnione odpowiednie warunki.
+
+
+\subsection*{Kolejność Tur}
+Jako pierwszy swoją Turę wykonuje ten uczestnik Walki, którego czynność spowodowała ogłoszenie Walki przez Mistrza Gry. Następnie pozostali uczestnicy Walki wykonują swoje Tury naprzemiennie między dwoma lub więcej stronami Walki (tzn. najpierw Turę wykonuje uczestnik 1 ze strony A, potem uczestnik 2 ze strony B, uczestnik 3 ze strony C, uczestnik 4 ze strony A i tak dalej).
+
+
+\subsection*{Duże Akcje}
+Duże Akcje wymienione poniżej są dostępne dla każdej Postaci:
+\begin{itemize}
+	\item Atak wręcz: należy wykonać Test Si. Jeśli Test zakończy się sukcesem, cel otrzymuje ilość Ran zadawanych przez użytą do ataku broń.
+	\item Atak z zasięgu: należy wykonać Test Zr. Jeśli Test zakończy się sukcesem, cel otrzymuje ilość Ran zadawanych przez użytą do ataku broń.
+	\item Pomoc: Postać pomaga innej Postaci wykonać Test - dodaje do Testu modyfikator +2. W jednym Teście może pomagać wiele Postaci, ale modyfikator dodaje się wyłącznie jeden raz. Aby wykonać tę akcję należy opisać sposób pomocy.
+	\item Podniesienie się: jeśli Postać leży na ziemi, może użyć swojej Dużej Akcji aby stanąć na nogach.
+	\item Przygotowanie: Postać wstrzymuje się z wykonaniem Dużej lub Małej Akcji dopóki nie zostaną spełnione określone warunki, np. "jeśli do mnie podejdzie, zaatakuję go mieczem". Kiedy zostanie spełniony podany warunek, Postać może (nie musi) wykonać swoją Akcję w ramach Reakcji.
+\end{itemize}
+
+
+\subsection*{Małe Akcje}
+Małe Akcje wymienione poniżej są dostępne dla każdej Postaci:
+\begin{itemize}
+	\item Użycie przedmiotu: np. Postać wypija zawartość butelki, zapala zapałkę lub 
+	\item Dobycie przedmiotu: Postać wyjmuje przedmiot z plecaka, z torby lub innego kontenera.
+	\item Interakcja: Postać wchodzi w interakcję z otoczeniem lub inną istotą: otwiera drzwi, pociąga za dźwignię, przewraca stół, rzuca komuś przedmiot (nie jako Atak; nie zadaje Ran).
+\end{itemize}
+
+
+\subsection*{Reakcje}
+Reakcje wymienione poniżej są dostępne dla każdej Postaci:
+\begin{itemize}
+	\item Unik: jeśli Postać jest celem ataku, może spróbować uniknąć go wykonując Test Zr. Jeśli osiągnie sukces, unika wszystkich obrażeń, lecz niezależnie od wyniku Testu upada na ziemię. Można dodać to Testu modyfikator -2, aby móc pozostać na nogach, niezależnie od wyniku Testu.
+\end{itemize}
+
+
+\end{multicols}
+
+
+
+\chapter{Szczegółowe zasady i spisy}
+
+
+\section{Gatunki}
+\begin{multicols}{2}
+
+Świat Iskry jest pełen magii, nazywanej przez jego mieszkańców \textbf{“Eterem”}. Eter znajduje się wszędzie, w powietrzu oraz materii i zachowuje się podobnie do promieniowania. Stężenie Eteru zmienia się w zależności od krainy - jeśli jest zbyt wysokie, nieprzystosowane organizmy najczęściej zaczynają mutować w niekontrolowany sposób, prowadzący do śmierci: nazywa się to \textbf{Chorobą Eteru}.
+
+Część istot zdołała przystosować się do życia w miejscach o różnych stężeniach Eteru, co skutkuje ogromną różnorodnością wśród organizmów, jakie można spotkać na świecie.
+
+Podczas tworzenia Postaci Gracz wybiera dla niej jeden z poniższych gatunków:
+
+
+\subsection*{Ludzie}
+Najbardziej powszechni, znani ze swojej zdolności adaptowania się do wielu warunków. Nie posiadają prawie żadnej odporności na działanie Eteru, lecz dzięki temu są na niego również bardzo wrażliwi.
+
+Na świecie Ludzie znani są ze swoich zdolności do tworzenia skomplikowanych przyrządów, cudownej biżuterii, a ich kuchnia uznawana jest za jedną z najlepszych.
+
+Największą wadą bycia człowiekiem jest długość życia, bardzo rzadko przekraczająca 100 lat.
+
+\subsubsection*{Wszechstronność}
+Jako Człowiek postać otrzymuje dwie dodatkowe Zdolności podczas tworzenia postaci.
+
+\subsubsection*{Zmysł Eteru}Postać może wyczuć nawet najmniejsze oznaki występowania Eteru oraz ocenić jego stężenie. 
+
+
+
+
+\subsection*{Elfy}
+Elfy: podobni do Ludzi, lecz znacznie od nich wyżsi, smuklejsi, z długimi, mierzącymi czasem nawet pół metra uszami, po których wewnętrznej stronie znajdują się rzędy cienkich, błoniastych blaszek, dzięki którym mają bardzo czuły słuch.
+
+Niegdyś Elfy żyły w odosobnieniu w gęstych lasach, zajmując się polowaniem na dzikie bestie. Ostatnio jednak wiele z nich, głównie wśród młodszych pokoleń, decyduje się mieszkać wśród ludzi.
+
+Elfy żyją przeciętnie do około 1000 lat, osiągając pełnoletność mając 50.
+
+\subsubsection*{Czułe zmysły}
+Postać jest w stanie widzieć w ciemności tak dobrze, jak w świetle oraz słyszy nawet najcichsze dźwięki w pobliżu.
+
+\subsubsection*{Odporność na Eter}
+Postać wytrzymuje średnie lub niższe stężenie Eteru.
+
+
+
+\subsection*{Krasnoludy}
+Tajemniczy lud mieszkający pod ziemią. Pozbawieni oczu o krępych, bardzo odpornych ciałach potrafią znieść niemal każde warunki. Nie lubią opuszczać swoich tuneli lub ogólnie miejsc, gdzie występuje wysokie stężenie Eteru - potrafią za jego pomocą wyczuwać co się dzieje w otoczeniu lepiej, niż jakakolwiek para oczu. Niestety oznacza to, że są kompletnie ślepi w miejscach go pozbawionych, przez co niechętnie odwiedzają miasta Ludzi lub Elfów.
+
+Istnieje odmiana Krasnoludów, która wykształciła umiejętność porozumiewania się telepatycznie używając eteru, lecz niewiele wiadomo o nich lub o ich umiejętności.
+
+Krasnoludy żyją od 1000 do 2000 lat.
+
+\subsubsection*{Niewidomi}
+Postać nie posiada zmysłu wzroku.
+
+\subsubsection*{Eterowizja}
+Znajdując się w miejscach o średnim lub wyższym stężeniu Eteru postać jest w stanie dokładnie określić położenie obiektów i istot znajdujących się w pobliżu.
+
+\subsubsection*{Odporność na Eter}
+Postać wytrzymuje każde stężenie Eteru.
+
+
+
+
+\subsection*{Asrai}
+Lud żyjący w dużych zbiornikach wodnych, głównie w jeziorach i głębokich rzekach. Asrai mierzą zwykle około półtora metra wysokości. Są obdarzeni lekko przezroczystą skórą o błękitnym zabarwieniu, a na ich przedramionach i łydkach znajdują się specjalne błoniaste grzebienie pozwalające im swobodnie poruszać się w wodzie.
+
+Ponieważ ciała Asrai składają się niemal w całości z wody, są bardzo wrażliwi na skrajne temperatury.
+
+Asrai żyją przeciętnie około 500 lat. Im są starsi, tym ich ciała stają się bardziej przezroczyste, aż ostatecznie całkowicie zamieniają się w wodę.
+
+\subsubsection*{Wrażliwość}
+Postać nie jest w stanie regenerować swojego Zdrowia ani Punktów Skupienia w miejscach o bardzo wysokiej lub bardzo niskiej temperaturze (ten efekt może być niwelowany za pomocą Zdolności lub Przedmiotów).
+
+\subsubsection*{Skrzela}
+Postać jest w stanie oddychać w wodzie tak samo dobrze, jak na lądzie.
+
+\subsubsection*{Lewitacja}
+Lewitacja: w miejscach o wysokim stężeniu Eteru postać jest w stanie unosić się nad ziemią nie wyżej niż trzykrotnie jej wysokość.
+
+\subsubsection*{Odporność na Eter}
+Postać wytrzymuje wysokie lub niższe stężenie Eteru.
+
+
+\end{multicols}
+
+
+
+\section{Zdolności}
+\begin{multicols}{2}
+
+Zdolności opisują to, czym potrafi zajmować się Postać. Pozwalają Postaci wykorzystywać dodatkowe ruchy, używać nowej wiedzy lub wykonywać niektóre czynności efektywniej.
+
+Niektóre Zdolności posiadają więcej niż jeden poziom. Aby uzyskać kolejny poziom Zdolności należy potraktować go jako nową Zdolności (tzn. wydać tyle PD, ile potrzeba na Zdolność itd.). Podczas tworzenia Postaci można wybrać 2 Zdolności (lub jedną Zdolność oraz jej drugi poziom).
+
+
+\end{multicols}
+
+
+\subsection*{Zdolności z poziomami}
+
+\begin{center}
+\begin{tabular}{ | m{50mm} | m{100mm} | }
+	\hline
+		Nazwa Zdolności 1 & opis zdolności 1 \\
+	\hline
+		Nazwa Zdolności 2 & opis Zdolności 2 \\
+	\hline
+\end{tabular}
+\end{center}
+
+
+\subsection*{Zdolności bez poziomów}
+
+\begin{center}
+\begin{tabular}{ | m{50mm} | m{100mm} | }
+	\hline
+		Efektywność & Postać używa dwukrotnie niższej liczby Zasobów przy czynnościach, które ich wymagają. \\
+	\hline
+		Język & Postać umie posługiwać się wybranym językiem w mowie i piśmie; Zdolność można zdobyć wielokrotnie. \\
+	\hline
+		Lekki Krok & Istoty starające się wykryć Postać otrzymują modyfikator -2 do tego testu. \\
+	\hline
+		Oburęczność & Postać może użyć Małej Akcji aby zaatakować za pomocą drugiej ręki. \\
+	\hline
+		Nazwa Zdolności 2 & opis Zdolności 2 \\
+	\hline
+		Nazwa Zdolności 2 & opis Zdolności 2 \\
+	\hline
+		Nazwa Zdolności 2 & opis Zdolności 2 \\
+	\hline
+		Nazwa Zdolności 2 & opis Zdolności 2 \\
+	\hline
+		Nazwa Zdolności 2 & opis Zdolności 2 \\
+	\hline
+\end{tabular}
+\end{center}
+
+
+
+\section{Miary i materiały}
+\begin{multicols}{2}
+
+\subsection*{Odległość}
+Odległość potrzebną przy niektórych mechanikach gry określa się za pomocą jednej z czterej kategorii:
+\begin{itemize}
+	\item na wyciągnięcie ręki: można dotknąć nie ruszając się z miejsca;
+	\item w pobliżu: w tej odległości można z kimś prowadzić rozmowę;
+	\item niedaleko: w zasięgu krzyku;
+	\item w oddali: w tej odległości nie można normalnie porozumieć się głosem.
+\end{itemize}
+
+
+\subsection*{Waga}
+Każdy z przedmiotów posiada tzw. \textbf{Wagę}, będącą łącznym przybliżeniem jego masy oraz rozmiaru. Wagę przedmiotu określa się w następujący sposób:
+\begin{itemize}
+	\item jeśli przedmiot mieści się w zaciśniętej dłoni, ma Wagę 0.
+	\item jeśli przedmiot można podnieść za pomocą jednej ręki, ma Wagę 1.
+	\item jeśli przedmiot można podnieść za pomocą 2 rąk, ma Wagę 2.
+\end{itemize}
+
+Podniesienie przedmiotów o Wadze wyższej niż 2 jest niemożliwe lub wymaga zdania Testu Si.
+
+\end{multicols}
+
+
+
+\section{Ekwipunek}
+\begin{multicols}{2}
+
+
+\end{multicols}
+
+
+\end{document}
