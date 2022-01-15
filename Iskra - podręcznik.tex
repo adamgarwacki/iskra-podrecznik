@@ -21,6 +21,8 @@
 
 \usepackage{array}
 
+\renewcommand{\arraystretch}{1.5}
+
 \author{Adam Garwacki}
 \title{Iskra - podrecznik}
 
@@ -72,6 +74,9 @@ Tworzenie postaci warto rozpocząć od wymyślenia dla niej imienia, ogólnego c
 \subsection*{Gatunek}
 Każda postać jest jednym z gatunków występujących w świecie stworzonym przez Mistrza Gry. Każda z nich ma inne siły i słabości, bonusy i specjalne właściwości opisujące niektóre aspekty ich życia.
 
+\subsubsection*{Tworzenie Postaci}
+Gatunek Postaci wybiera się raz, na samym początku jej tworzenia. Nie można zmienić Gatunku Postaci chyba że Mistrz Gry stwierdzi inaczej.
+
 
 \subsection*{Atrybuty}
 Większość Postaci w grze charakteryzowana jest przez \textbf{cztery główne Atrybuty} określające jej predyspozycje w różnych sytuacjach lub dziedzinach:
@@ -92,13 +97,17 @@ Każdy z czterech atrybutów może przyjmować \textbf{wartości od 0 do 5}. Int
 	\item 5: legendarnie; mistrz w swojej kategorii.
 \end{itemize}
 
+\subsubsection*{Tworzenie Postaci}
+Tworząc Postać Gracz otrzymuje 8 punktów Atrybutów, które może między nie rozdzielić. Każdy z Atrybutów ma początkowo wartość 0.
+
 
 \subsection*{Zdrowie}
-Zdrowie postaci oznacza ilość \textbf{Ran}, jakie może otrzymać postać zanim spotka ją śmierć. Maksymalna wartość Zdrowia zawsze wynosi 5. Kiedy ilość punktów Zdrowia wynosi 2 lub mniej, postać otrzymuje modyfikator -2 do wszystkich testów.
-
-Kiedy Zdrowie postaci osiągnie poziom 0, mówi się, że postać znajduje się na \textbf{Progu Śmierci}. Jeśli postać będąca na Progu Śmierci otrzyma jakiekolwiek obrażenia lub otrzyma porażkę w dowolnym wykonywanym przez siebie teście, natychmiast umiera. Postać przestaje być na Progu Śmierci jeśli odzyska co najmniej 1 punkt Zdrowia.
+Zdrowie postaci oznacza ilość \textbf{Ran}, jakie może otrzymać postać zanim spotka ją śmierć. Maksymalna wartość Zdrowia zawsze wynosi 5. Postać otrzymuje modyfikator -1 do wszystkich Testów za każdy brakujący punkt Zdrowia poniżej 4.
 
 Zdrowie postaci regeneruje się w tempie 1 punktu po upłynięciu jednej doby spędzonej na odpoczynku (bez przerwy) w \textbf{Bezpiecznym Miejscu}. Jeśli znajduje się poza takim, odzyskuje Zdrowie tylko jeśli zda test Si, który może wykonać wyłącznie \textbf{raz w ciągu jednej doby}. Normalnie należy wykonać ten test po raz pierwszy po upłynięciu jednej doby po otrzymaniu obrażeń. Wyjątkiem jest sytuacja, kiedy postać w trakcie odzyskiwania Zdrowia stanie na Progu Śmierci i nie odzyska zdrowia w żaden inny sposób: wtedy należy wykonać ten test dobę po stanięciu na Progu Śmierci.
+
+\subsubsection{Próg Śmierci}
+Kiedy Zdrowie postaci osiągnie poziom 0, mówi się, że postać znajduje się na \textbf{Progu Śmierci}. Jeśli postać będąca na Progu Śmierci otrzyma jakiekolwiek obrażenia lub otrzyma porażkę w dowolnym wykonywanym przez siebie teście, natychmiast umiera. Postać przestaje być na Progu Śmierci jeśli odzyska co najmniej 1 punkt Zdrowia.
 
 
 \subsection*{Punkty skupienia}
@@ -115,11 +124,12 @@ Jeśli Mistrz Gry uzna, że opis sytuacji podany przez Gracza nie jest odpowiedn
 
 
 \subsection*{Predyspozycje i słabości}
-Na początku każda postać otrzymuje co najmniej jedną Predyspozycję oraz co najmniej jedną Słabość - to są modyfikatory do testów dotyczących odpowiednich sytuacji. Predyspozycją lub Słabością może być na przykład: Nawigacja, Pojedynki, Publiczne Przemówienia. Jeśli wykonywany test dotyczy tematu wskazanego przez Predyspozycję lub Słabość, należy dodać do testu odpowiednio +2 lub -2.
-
-Predyspozycje i Słabości nie są twardo zdefiniowane - każdy Gracz wymyśla je samemu i zapisuje dopiero po konsultacji z Mistrzem Gry. Można wybrać więcej niż jedną Predyspozycję, aby maksymalnie posiadać 3, ale za każdą dodatkową Predyspozycję należy wziąć jedną dodatkową Słabość.
+Predyspozycje i Słabości to modyfikatory do testów dotyczących odpowiednich sytuacji. Predyspozycją lub Słabością może być na przykład: Nawigacja, Pojedynki, Publiczne Przemówienia. Jeśli wykonywany test dotyczy tematu wskazanego przez Predyspozycję lub Słabość, należy dodać do testu odpowiednio +2 lub -2.
 
 Przykład: trzeba pamiętać, że jeśli ktoś ma Predyspozycję Skradanie się i podczas skradania się zamierza wykonać atak, nie otrzymuje bonusu do tego ataku posiadając wyłącznie Skradanie się.
+
+\subsubsection*{Tworzenie Postaci}
+Predyspozycje i Słabości nie są twardo zdefiniowane - każdy Gracz wymyśla je samemu i zapisuje dopiero po konsultacji z Mistrzem Gry. Każda Postać musi mieć co najmniej jedną Predyspozycję oraz nie więcej niż trzy. Za każdą Predyspozycję należy wybrać jedną Słabość.
 
 Wskazówka: Predyspozycje i Słabości mogą być sposobem na zdefiniowanie części charakteru postaci: wskazują w jakich okolicznościach postać jest pewna siebie, a w jakich czuje niepewność.
 
@@ -160,7 +170,8 @@ Dodatkowo, istnieją specjalne Zdolności które mogą wymagać odpowiedniego po
 \subsection*{Zdolności}
 Zdolności pozwalają postaci na wykonywanie specjalnych akcji, otrzymywanie dodatkowych modyfikatorów, bonusy do obrony itp.
 
-Podczas tworzenia Postaci oprócz Zdolności otrzymywanych przez wybrany Gatunek Gracz wybiera dwie Zdolności z listy.
+\subsubsection*{Tworzenie Postaci}
+Podczas tworzenia Postaci Gracz wybiera dwie Zdolności.
 
 
 \subsection*{Udźwig}
@@ -168,6 +179,12 @@ Udźwig określa jak wiele jak dużych przedmiotów może nosić tak, aby móc p
 
 Maksymalnie Postać jest w stanie podnieść \textbf{łączną Wagę} przedmiotów wynoszącą \textbf{maksymalnie dwukrotnie swój Udźwig}, lecz otrzymuje wtedy modyfikator -2 do testów wykorzystujących Si oraz Zr i może poruszać się maksymalnie z połową swojej normalnej prędkości.
 
+
+\subsection*{Przedmioty}
+Każdy z przedmiotów posiada tzw. \textbf{Wagę}, będącą łącznym przybliżeniem jego masy oraz rozmiaru.
+
+\subsubsection*{Tworzenie Postaci}
+Na koniec należy wybrać Postaci Ekwipunek (TUTAJ BĘDĄ ZASADY, ALE NAJPIERW MUSZĘ NAPISAĆ EKWIPUNEK ŻEBY WIEDZIEĆ JAKI W OGÓLE JEST DOSTĘPNY I ZA ILE).
 
 \end{multicols}
 
@@ -191,11 +208,17 @@ To, jakim typem Akcji jest czynność wykonana przez Postać zwykle nie będzie 
 
 \textbf{Turą} nazywa się krótki czas w trakcie Walki, w którym jeden z jej uczestników mógł wykonywać Akcje. Kiedy wszyscy uczestnicy Walki zakończą swoje Tury kończy się jedna \textbf{Runda} i rozpoczyna kolejna.
 
-W trakcie jednej Rundy każdy z uczestników może wykonać \textbf{jedną z każdego typu Akcji}: Duże, Małe i Przelotne Akcje (lub dwie Małe Akcje oraz jedną Przelotną) w swojej Turze a Reakcje w dowolnym momencie Rundy kiedy zostaną spełnione odpowiednie warunki.
+W trakcie jednej Rundy każdy z uczestników może wykonać \textbf{jedną z każdego typu Akcji}: Duże, Małe i Przelotne Akcje w swojej Turze a Reakcje w dowolnym momencie Rundy kiedy zostaną spełnione odpowiednie warunki. Zamiast Dużej Akcji Postać może wykonać jedną Małą Akcję lub jedną Przelotną Akcję.
 
 
 \subsection*{Kolejność Tur}
 Jako pierwszy swoją Turę wykonuje ten uczestnik Walki, którego czynność spowodowała ogłoszenie Walki przez Mistrza Gry. Następnie pozostali uczestnicy Walki wykonują swoje Tury naprzemiennie między dwoma lub więcej stronami Walki (tzn. najpierw Turę wykonuje uczestnik 1 ze strony A, potem uczestnik 2 ze strony B, uczestnik 3 ze strony C, uczestnik 4 ze strony A i tak dalej).
+
+
+\subsection*{Atak z zaskoczenia}
+Jeśli uczestnicy Walki stojący po jednej stronie pozostawali niewykryci do momentu rozpoczęcia Walki, każdy z nich może wykonać jedną dodatkową Turę zanim rozpocznie się normalna kolejność.
+
+Jeśli uczestnik Walki zaatakuje innego uczestnika, który nie wiedział o jego obecności, atakujący otrzymuje modyfikator +2 do trafienia.
 
 
 \subsection*{Duże Akcje}
@@ -215,6 +238,14 @@ Małe Akcje wymienione poniżej są dostępne dla każdej Postaci:
 	\item Użycie przedmiotu: np. Postać wypija zawartość butelki, zapala zapałkę lub 
 	\item Dobycie przedmiotu: Postać wyjmuje przedmiot z plecaka, z torby lub innego kontenera.
 	\item Interakcja: Postać wchodzi w interakcję z otoczeniem lub inną istotą: otwiera drzwi, pociąga za dźwignię, przewraca stół, rzuca komuś przedmiot (nie jako Atak; nie zadaje Ran).
+\end{itemize}
+
+
+\subsection*{Przelotne Akcje}
+Przelotne Akcje wymienione poniżej są dostępne dla każdej Postaci:
+\begin{itemize}
+	\item Mowa: Postać wypowiada nie więcej niż jedno zdanie.
+	\item Ruch: Postać przemieszcza się do miejsca W Pobliżu. 
 \end{itemize}
 
 
@@ -318,53 +349,41 @@ Postać wytrzymuje wysokie lub niższe stężenie Eteru.
 \section{Zdolności}
 \begin{multicols}{2}
 
-Zdolności opisują to, czym potrafi zajmować się Postać. Pozwalają Postaci wykorzystywać dodatkowe ruchy, używać nowej wiedzy lub wykonywać niektóre czynności efektywniej.
-
-Niektóre Zdolności posiadają więcej niż jeden poziom. Aby uzyskać kolejny poziom Zdolności należy potraktować go jako nową Zdolności (tzn. wydać tyle PD, ile potrzeba na Zdolność itd.). Podczas tworzenia Postaci można wybrać 2 Zdolności (lub jedną Zdolność oraz jej drugi poziom).
-
+Zdolności opisują to, czym potrafi zajmować się Postać. Niektóre Zdolności mogą być wykorzystywane jedynie w ramach odpowiedniego typu Akcji lub po wydaniu wskazanej liczby Punktów Skupienia.
 
 \end{multicols}
 
 
-\subsection*{Zdolności z poziomami}
-
-\begin{center}
+\begin{table}
+\caption{Lista Zdolności}
+\centering
 \begin{tabular}{ | m{50mm} | m{100mm} | }
 	\hline
-		Nazwa Zdolności 1 & opis zdolności 1 \\
+		Alchemia &  \\
 	\hline
-		Nazwa Zdolności 2 & opis Zdolności 2 \\
+		Arkana &  \\
 	\hline
-\end{tabular}
-\end{center}
-
-
-\subsection*{Zdolności bez poziomów}
-
-\begin{center}
-\begin{tabular}{ | m{50mm} | m{100mm} | }
-	\hline
-		Efektywność & Postać używa dwukrotnie niższej liczby Zasobów przy czynnościach, które ich wymagają. \\
+		Efektywność & Postać używa dwukrotnie niższej liczby Materiałów przy czynnościach, które ich wymagają. \\
 	\hline
 		Język & Postać umie posługiwać się wybranym językiem w mowie i piśmie; Zdolność można zdobyć wielokrotnie. \\
 	\hline
+		Kamuflaż & Wydając 1 PS Postać potrafi się zamaskować w taki sposób, że dopóki pozostaje nieruchoma (nie wykonuje żadnych Akcji). \\
+	\hline
 		Lekki Krok & Istoty starające się wykryć Postać otrzymują modyfikator -2 do tego testu. \\
 	\hline
-		Oburęczność & Postać może użyć Małej Akcji aby zaatakować za pomocą drugiej ręki. \\
+		Oburęczność & Jako Mała Akcja Postać może zaatakować za pomocą drugiej ręki. \\
 	\hline
-		Nazwa Zdolności 2 & opis Zdolności 2 \\
+		Pierwsza Pomoc & Jako Duża Akcja Postać może spróbować uratować istotę stojącą na Progu Śmierci. Aby to zrobić Gracz musi wydać 1 PS oraz zdać Test Int. \\
 	\hline
-		Nazwa Zdolności 2 & opis Zdolności 2 \\
+		Przypływ Adrenaliny & Po wydaniu 1 PS Postać może wykonać dwie Duże Akcje zamiast jednej. \\
 	\hline
-		Nazwa Zdolności 2 & opis Zdolności 2 \\
+		Spartańskie Racje & Postać potrzebuje dwukrotnie mniej jedzenia. \\
 	\hline
-		Nazwa Zdolności 2 & opis Zdolności 2 \\
-	\hline
-		Nazwa Zdolności 2 & opis Zdolności 2 \\
+		Wiedza & Jako Duża Akcja Gracz może wydać 1 PS i wykonać Test Int aby spróbować dowiedzieć się od Mistrza Gry jakiegoś faktu na temat świata gry. Mistrz Gry może odmówić odpowiedzi jeśli uzna, że pytanie wykracza poza zakres wiedzy który mogłaby posiadać Postać - w takim przypadku Gracz nie musi wydawać Punktu Skupienia lecz traci swoją Akcję. \\
 	\hline
 \end{tabular}
-\end{center}
-
+\label{zdolnosci:1}
+\end{table}
 
 
 \section{Miary i materiały}
@@ -373,15 +392,15 @@ Niektóre Zdolności posiadają więcej niż jeden poziom. Aby uzyskać kolejny 
 \subsection*{Odległość}
 Odległość potrzebną przy niektórych mechanikach gry określa się za pomocą jednej z czterej kategorii:
 \begin{itemize}
-	\item na wyciągnięcie ręki: można dotknąć nie ruszając się z miejsca;
-	\item w pobliżu: w tej odległości można z kimś prowadzić rozmowę;
-	\item niedaleko: w zasięgu krzyku;
-	\item w oddali: w tej odległości nie można normalnie porozumieć się głosem.
+	\item Na Wyciągnięcie Ręki: można dotknąć nie ruszając się z miejsca;
+	\item W Pobliżu: w tej odległości można z kimś prowadzić rozmowę;
+	\item Niedaleko: w zasięgu krzyku;
+	\item W Oddali: w tej odległości nie można normalnie porozumieć się głosem.
 \end{itemize}
 
 
 \subsection*{Waga}
-Każdy z przedmiotów posiada tzw. \textbf{Wagę}, będącą łącznym przybliżeniem jego masy oraz rozmiaru. Wagę przedmiotu określa się w następujący sposób:
+Wagę przedmiotu określa się w następujący sposób:
 \begin{itemize}
 	\item jeśli przedmiot mieści się w zaciśniętej dłoni, ma Wagę 0.
 	\item jeśli przedmiot można podnieść za pomocą jednej ręki, ma Wagę 1.
@@ -394,11 +413,34 @@ Podniesienie przedmiotów o Wadze wyższej niż 2 jest niemożliwe lub wymaga zd
 
 
 
-\section{Ekwipunek}
+\section{Ekwipunek i Wydatki}
 \begin{multicols}{2}
+
+\subsection*{Broń do walki wręcz}
+
+
+\subsection*{Broń zasięgowa}
+
+
+\subsection*{Pancerze}
+
+
+\subsection*{Przedmioty użytkowe}
+
+
+\subsection*{Wierzchowce i zwierzęta}
+
+
+\subsection*{Materiały}
+
+
+\subsection*{Wydatki}
 
 
 \end{multicols}
+
+
+\section{Podróż i Odpoczynek}
 
 
 \end{document}
